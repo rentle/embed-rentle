@@ -5,11 +5,14 @@
  * which makes it higher in priority.
  */
 
-.wp-block-cgb-block-embed-rentle  {
-  background: $green;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+.wp-block-embed-rentle-shop-block  {
+  background-color: $rentle-light;
+  border: 2px solid $rentle-dark;
+  color: $rentle-dark;
+  text-align: center;
+}
+
+.wp-block-embed-rentle-shop-block__warning {
+  padding: 1rem;
+  background-color: red;
 }

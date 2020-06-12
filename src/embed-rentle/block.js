@@ -1,9 +1,5 @@
-/**
- * BLOCK: embed-rentle
- *
- * Registering a basic block with Gutenberg.
- * Simple block, renders and saves the same content without any interactivity.
- */
+// Import classnames
+import classNames from 'classnames';
 
 //  Import CSS.
 import './editor.scss';
@@ -92,6 +88,15 @@ registerBlockType('embed-rentle/shop-block', {
 							/>
 						</PanelRow>
 						<PanelRow>
+							<TextControl
+								value={attributes.productId}
+								type="string"
+								onChange={value => setAttributes({productId: value})}
+								placeholder="Product ID"
+								label="Product ID"
+							/>
+						</PanelRow>
+						<PanelRow>
 							<SelectControl
 								label={__('Padding')}
 								value={attributes.paddingSize}
@@ -107,9 +112,9 @@ registerBlockType('embed-rentle/shop-block', {
 					</PanelBody>
 				</InspectorControls>
 				<div className={classNames(className, attributes.paddingSize)}>
-					{Icon}
+					{Icon()}
 					{(!attributes.shopId || !attributes.locationId) &&
-					<p className={'wp-block-embed-rentle-widget__warning'}>{__('You need to define shop and location id!')}</p>}
+					<p className={'wp-block-embed-rentle-shop-block__warning'}>{__('You need to define shop and location id!')}</p>}
 					{(attributes.shopId && attributes.locationId) &&
 					<p>{__('Your widget is ready. Just preview the page and see it in action.')}</p>}
 				</div>

@@ -4,11 +4,55 @@
  * CSS for both Frontend+Backend.
  */
 
-.wp-block-cgb-block-embed-rentle  {
-  background: $red;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+$mobile-padding: 1rem;
+$tablet-padding: 1.5rem;
+$desktop-padding: 2rem;
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-embed-rentle-shop-block {
+  padding: 2rem 0;
+
+  &.no-padding {
+	padding: 0;
+  }
+
+  &.small-padding {
+	padding: $mobile-padding 0;
+
+	@include media-breakpoint-up(sm) {
+	  padding: $tablet-padding 0;
+	}
+
+	@include media-breakpoint-up(xl) {
+	  padding: $desktop-padding 0;
+	}
+  }
+
+  &.medium-padding {
+	padding: $mobile-padding*1.5 0;
+
+	@include media-breakpoint-up(sm) {
+	  padding: $tablet-padding*1.5 0;
+	}
+
+	@include media-breakpoint-up(xl) {
+	  padding: $desktop-padding*1.5 0;
+	}
+  }
+
+  &.large-padding {
+	padding: $mobile-padding*2.5 0;
+
+	@include media-breakpoint-up(sm) {
+	  padding: $tablet-padding*2.5 0;
+	}
+
+	@include media-breakpoint-up(xl) {
+	  padding: $desktop-padding*2.5 0;
+	}
+  }
 }

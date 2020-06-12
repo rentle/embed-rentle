@@ -5,6 +5,12 @@
  * that are used across the project.
 */
 
+// Import npm dependencies
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/grid";
+@import "~bootstrap/scss/mixins/breakpoints";
+
 // Rentle brand colors to be used with plugin
 $rentle-dark: #0E002C !default;
 $rentle-light: #F2F2F2 !default;
