@@ -81,9 +81,24 @@ class Embed_Rentle {
 				'editor_script' => 'embed_rentle-block-js',
 				// Enqueue blocks.editor.build.css in the editor only.
 				'editor_style'  => 'embed_rentle-block-editor-css',
+				// PHP rendering callback
+				'render_callback' => [ $this, 'rentle_output_render_callback' ],
 			)
 		);
 	}
+
+	public function rentle_output_render_callback( $attributes ) {
+		ob_start(); // Turn on output buffering
+
+		Rentle_Content_Creator::create_rentle_content( $attributes );
+
+		$output = ob_get_contents(); // collect output
+		ob_end_clean(); // Turn off ouput buffer
+
+		return $output; // Print output
+	}
 }
+
+include_once plugin_dir_path( __FILE__ ) . '../library/embed-rentle-classes.php';
 
 $rentle = new Embed_Rentle();
