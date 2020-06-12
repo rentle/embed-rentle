@@ -6,7 +6,8 @@ import './editor.scss';
 import './style.scss';
 
 // Import Icon
-import Icon from '../icon';
+import Logo from '../rentle-logo';
+import BlockLogo from "../block-logo";
 
 //Import WP stuff
 const {__} = wp.i18n; // Import __() from wp.i18n
@@ -20,7 +21,7 @@ const {TextControl, SelectControl, PanelBody, PanelRow} = wp.components;
  */
 registerBlockType('embed-rentle/shop-block', {
 	title: __('Rentle shop block'), // Block title.
-	icon: 'shield',
+	icon: BlockLogo(),
 	category: 'widgets',
 	keywords: [
 		__('rentle'),
@@ -112,7 +113,7 @@ registerBlockType('embed-rentle/shop-block', {
 					</PanelBody>
 				</InspectorControls>
 				<div className={classNames(className, attributes.paddingSize)}>
-					{Icon()}
+					{Logo()}
 					{(!attributes.shopId || !attributes.locationId) &&
 					<p className={'wp-block-embed-rentle-shop-block__warning'}>{__('You need to define shop and location id!')}</p>}
 					{(attributes.shopId && attributes.locationId) &&
