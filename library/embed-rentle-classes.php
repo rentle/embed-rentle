@@ -2,6 +2,7 @@
 
 class Rentle_Content_Creator {
 	public static function create_rentle_content( $attributes ) {
+		$attributes = self::change_keys($attributes); //if this is a shortcode render, need to modify keys
 		?>
 		<div class="<?php echo self::get_classes( $attributes ) ?>">
 			<?php
@@ -56,5 +57,55 @@ class Rentle_Content_Creator {
 
 	private static function errorrr() {
 		echo '<p>' . __( 'Can\'t create iframe. Shop and location ID need to be specified.' ) . '</p>';
+	}
+
+	/**
+	 * Change keys in array since shortcode doesn't approve camelcase
+	 * See: https://codex.wordpress.org/Shortcode_API#Handling_Attributes
+	 *
+	 * Attributes for shortcode:
+	 * shop (shop name)
+	 * location (location name)
+	 * category (category name)
+	 * product (product name)
+	 * padding (padding size)
+	 * class (custom class name)
+	 *
+	 * @param $atts
+	 *
+	 * @return mixed
+	 */
+	private static function change_keys($atts) {
+		if (isset($atts['shop'])) {
+			$atts['shopId'] = $atts['shop'];
+			unset($atts['shop']);
+		}
+
+		if (isset($atts['location'])) {
+			$atts['locationId'] = $atts['location'];
+			unset($atts['location']);
+		}
+
+		if (isset($atts['category'])) {
+			$atts['categoryId'] = $atts['category'];
+			unset($atts['category']);
+		}
+
+		if (isset($atts['product'])) {
+			$atts['productId'] = $atts['product'];
+			unset($atts['product']);
+		}
+
+		if (isset($atts['padding'])) {
+			$atts['paddingSize'] = $atts['padding'];
+			unset($atts['padding']);
+		}
+
+		if (isset($atts['class'])) {
+			$atts['className'] = $atts['class'];
+			unset($atts['class']);
+		}
+
+		return $atts;
 	}
 }

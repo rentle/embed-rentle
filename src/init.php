@@ -24,6 +24,7 @@ class Embed_Rentle {
 	 */
 	public function initialize_hooks() {
 		$this->register_assets();
+		add_shortcode( 'rentle_shop', [ $this, 'rentle_output_render_callback' ] );
 	}
 
 	public function register_assets() {
