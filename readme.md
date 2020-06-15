@@ -1,3 +1,35 @@
+# Embed Rentle WP plugin
+
+## Requirements
+Rentle.io account needed.
+
+## How to use
+Once plugin is activated, rentle shop block can be added via Gutenberg blocks. Plugin can be used also via shortcode, see below.
+
+Block has few settings when it's selected:
+- shop id (mandatory)
+- location
+- category
+- product
+- padding options
+- custom class can be added to Gutenberg editor
+
+As said, only shop id/name is mandatory. Note that if you want to show product widget, you need to define all four settings (shop, location, category, product).
+
+### Using shortcode
+
+Following shortcode can be used: `[rentle_shop]`
+
+Shortcode can take different attributes:
+- `shop` ==> Your rentle.io shop id/name
+- `location` ==>  Your rentle.io location id/name
+- `category` ==> category id you want to show
+- `product` ==> specific product you want to show
+- `padding` ==> vertical padding of the shop block. Can be one of the following: `no-padding`, `small-padding`, `medium-padding`, `large-padding`
+- `class` ==> if you want to wrap the element to custom class
+
+Example: `[rentle_shop shop="myshop" location="mylocation"]` ==> would show rentle iframe from the selected location.
+
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
 
 Below you will find some information on how to run scripts.
