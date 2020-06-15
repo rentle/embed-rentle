@@ -114,9 +114,9 @@ registerBlockType('embed-rentle/shop-block', {
 				</InspectorControls>
 				<div className={classNames(className, attributes.paddingSize)}>
 					{Logo()}
-					{(!attributes.shopId || !attributes.locationId) &&
-					<p className={'wp-block-embed-rentle-shop-block__warning'}>{__('You need to define shop and location id!')}</p>}
-					{(attributes.shopId && attributes.locationId) &&
+					{(!attributes.shopId) &&
+					<p className={'wp-block-embed-rentle-shop-block__warning'}>{__('You need to define shop id.')}</p>}
+					{(attributes.shopId) &&
 					<p>{__('Your widget is ready. Just preview the page and see it in action.')}</p>}
 				</div>
 			</Fragment>

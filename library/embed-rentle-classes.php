@@ -42,13 +42,17 @@ class Rentle_Content_Creator {
 	}
 
 	public static function create_iframe_src( $attributes ) {
-		$url = "https://rentle.shop/${attributes['shopId']}/${attributes['locationId']}/";
+		$url = "https://rentle.shop/${attributes['shopId']}/";
 
-		if ( ! empty( $attributes['categoryId'] ) ) {
-			$url .= "categories/${attributes['categoryId']}/";
+		if ( ! empty( $attributes['locationId'] ) ) {
+			$url .= "${attributes['locationId']}/";
 
-			if ( ! empty( $attributes['productId'] ) ) {
-				$url .= "products/${attributes['productId']}";
+			if ( ! empty( $attributes['categoryId'] ) ) {
+				$url .= "categories/${attributes['categoryId']}/";
+
+				if ( ! empty( $attributes['productId'] ) ) {
+					$url .= "products/${attributes['productId']}";
+				}
 			}
 		}
 
@@ -56,7 +60,7 @@ class Rentle_Content_Creator {
 	}
 
 	private static function errorrr() {
-		echo '<p>' . __( 'Can\'t create iframe. Shop and location ID need to be specified.' ) . '</p>';
+		echo '<p>' . __( 'Can\'t create iframe. Shop ID need to be specified.' ) . '</p>';
 	}
 
 	/**
