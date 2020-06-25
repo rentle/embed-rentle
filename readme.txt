@@ -17,7 +17,9 @@ With Rentle you optimize your rental management with two plans: [Rentle Lite](ht
 
 ### Features in [Rentle Lite](https://www.rentle.io/lite):
 
-* Easy payment handling with deposit support.
+* Booking calendar with real-time inventory availability
+* No risk of overbookings
+* Easy payment handling with deposit support
 * Collecting customer details (height, weight etc.) as part of the order confirmation
 * Email notifications
 * Hosted mobile friendly online store (compatible with Facebook "Reserve now"-button)
