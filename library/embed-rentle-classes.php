@@ -48,10 +48,10 @@ class Rentle_Content_Creator {
 			$url .= "${attributes['locationId']}/";
 
 			if ( ! empty( $attributes['categoryId'] ) ) {
-				$url .= "categories/${attributes['categoryId']}/";
+				$url .= "categories/${attributes['categoryId']}/products/";
 
 				if ( ! empty( $attributes['productId'] ) ) {
-					$url .= "products/${attributes['productId']}/";
+					$url .= "${attributes['productId']}/";
 				}
 			}
 		}
