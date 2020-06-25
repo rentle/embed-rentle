@@ -63,7 +63,7 @@ class Rentle_Content_Creator {
 	}
 
 	private static function setting_iframe_locale() {
-		$string = '?lang=' . get_locale();
+		$string = '?lang=' . substr( get_locale(), 0, 2 ); // Need only first two letters of country code
 
 		// Look for polylang installation
 		if ( function_exists( 'pll_current_language' ) ) {
