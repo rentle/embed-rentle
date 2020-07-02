@@ -1,4 +1,4 @@
-=== Wordpress Rental & Booking plugin by Rentle ===
+=== Rentle - Easy Rental Booking System ===
 Contributors: rentle
 Tags: rental, calendar, availability, reservation, booking
 Requires at least: 5.0
@@ -11,9 +11,9 @@ Free rental and booking plugin for Wordpress websites by Rentle. Reservations wi
 
 == Description ==
 
-**Rentle** is the easiest way to handle rental and activity bookings in your Wordpress website. We've built software for the largest ski resorts, outdoor resorts and bike rental shops in the world. Now we are bringing the same benefits to a Wordpress plugin that starts your online renting and activity sales in minutes. 
+**Rentle** is the easiest way to handle rental and activity bookings in your Wordpress website. We've built software for the largest ski resorts, outdoor resorts and bike rental shops in the world. Now we are bringing the same benefits to a Wordpress plugin that starts your online renting and activity sales in minutes.
 
-With Rentle you optimize your rental management with two plans: [Rentle Lite](https://www.rentle.io/lite) or [Rentle Core](https://www.rentle.io/core). Lite is our free plan to handle online rentals. Core scales to the needs of the largest operators for both walk-in and online rentals. 
+With Rentle you optimize your rental management with two plans: [Rentle Lite](https://www.rentle.io/lite) or [Rentle Core](https://www.rentle.io/core). Lite is our free plan to handle online rentals. Core scales to the needs of the largest operators for both walk-in and online rentals.
 
 ### Features in [Rentle Lite](https://www.rentle.io/lite):
 
@@ -46,7 +46,7 @@ Laajis Urban Outdoor Resort - Skis, Bikes, Sports equipment, Adventure Park
 
 
 ### How to get in touch?
-We are always open for ideas. Drop us a message at our [website](https://www.rentle.io) or via [email](info@rentle.io). 
+We are always open for ideas. Drop us a message at our [website](https://www.rentle.io) or via [email](info@rentle.io).
 
 
 More technical documentation about the plugin can be found from Github: [https://github.com/luuptek/embed-rentle](https://github.com/luuptek/embed-rentle)
@@ -67,7 +67,7 @@ We have two plans **Lite** and **Core**. Lite is always free, and you can use th
 
 = Why is Rentle Lite free? =
 
-We believe online rentals are a basic right for every business. We wanted to enable every business to get started with online rentals without a hassle. 
+We believe online rentals are a basic right for every business. We wanted to enable every business to get started with online rentals without a hassle.
 
 = Do you offer support? =
 
@@ -75,7 +75,7 @@ Yes. You can reach us via in-app chat or via email at [support@rentle.io](suppor
 
 = Can I use the same system for walk-in rentals? =
 
-Yes, but you will probably need Rentle Core for that. With Core you can handle your whole operation from one system without any hassle like our largest customers. But if you are searching for a solution for online bookings or rentals - check out Lite first. It is fast and easy way to get started. 
+Yes, but you will probably need Rentle Core for that. With Core you can handle your whole operation from one system without any hassle like our largest customers. But if you are searching for a solution for online bookings or rentals - check out Lite first. It is fast and easy way to get started.
 
 
 == Screenshots ==
