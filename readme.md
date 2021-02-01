@@ -14,7 +14,7 @@ Block has few settings when it's selected:
 - padding options
 - custom class can be added to Gutenberg editor
 
-As said, only shop id/name is mandatory. Note that if you want to show product widget, you need to define all four settings (shop, location, category, product).
+As said, only shop id/name is mandatory. You can customise the output by defining more settings, such as location, category and/or product.
 
 ### Using shortcode
 
