@@ -42,28 +42,59 @@ class Rentle_Content_Creator {
 	}
 
 	public static function create_iframe_src( $attributes ) {
-		$url = "https://rentle.shop/${attributes['shopId']}/";
+		$base_url         = "https://rentle.store/{$attributes['shopId']}";
+		$category_request = false;
 
-		if ( ! empty( $attributes['locationId'] ) ) {
-			$url .= "${attributes['locationId']}/";
-
-			if ( ! empty( $attributes['categoryId'] ) ) {
-				$url .= "categories/${attributes['categoryId']}/products/";
-
-				if ( ! empty( $attributes['productId'] ) ) {
-					$url .= "${attributes['productId']}/";
-				}
-			}
+		// Show by shop name
+		if ( empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
+			$url = $base_url;
 		}
 
+		// Show by location
+		if ( ! empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
+			$url = "{$base_url}/l/{$attributes['locationId']}/";
+		}
+
+		// Show by product
+		if ( ( empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) || ( empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) ) {
+			$url = "{$base_url}/product/{$attributes['productId']}/";
+		}
+
+		// Show by product and location
+		if ( ! empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) {
+			$url = "{$base_url}/l/{$attributes['locationId']}/product/{$attributes['productId']}/";
+		}
+
+		// Show by category
+		if ( empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
+			$url              = "{$base_url}/shop?category={$attributes['categoryId']}";
+			$category_request = true;
+		}
+
+		// Show by category and location
+		if ( ! empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
+			$url              = "{$base_url}/l/{$attributes['locationId']}/shop?category={$attributes['categoryId']}";
+			$category_request = true;
+		}
+
+		// all filled, show by product and location
+		if ( ! empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) {
+			$url = "{$base_url}/l/{$attributes['locationId']}/product/{$attributes['productId']}/";
+		}
+
+
 		// Adding lang code
-		$url .= self::setting_iframe_locale();
+		if ( $category_request ) {
+			$url .= self::setting_iframe_locale( '&' );
+		} else {
+			$url .= self::setting_iframe_locale();
+		}
 
 		return $url;
 	}
 
-	private static function setting_iframe_locale() {
-		$string = '?lang=' . substr( get_locale(), 0, 2 ); // Need only first two letters of country code
+	private static function setting_iframe_locale( $start_with = '?' ) {
+		$string = $start_with . 'lang=' . substr( get_locale(), 0, 2 ); // Need only first two letters of country code
 
 		// Look for polylang installation
 		if ( function_exists( 'pll_current_language' ) ) {
