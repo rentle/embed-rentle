@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Rentle - Easy Rental Booking System
- * Plugin URI: https://github.com/ahmadawais/create-guten-block/
+ * Plugin URI: https://wordpress.org/plugins/embed-rentle/
  * Description: Rentle WordPress plugin to insert Rentle booking system on your web site.
  * Author: rentle
  * Author URI: https://www.rentle.io/
