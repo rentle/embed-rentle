@@ -49,7 +49,7 @@ Laajis Urban Outdoor Resort - Skis, Bikes, Sports equipment, Adventure Park
 We are always open for ideas. Drop us a message at our [website](https://www.rentle.io) or via [email](info@rentle.io).
 
 
-More technical documentation about the plugin can be found from Github: [https://github.com/luuptek/embed-rentle](https://github.com/luuptek/embed-rentle)
+More technical documentation about the plugin can be found from Github: [https://github.com/rentle/embed-rentle](https://github.com/rentle/embed-rentle)
 
 == Installation ==
 Follow the steps below.
