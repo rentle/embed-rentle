@@ -16,6 +16,9 @@ const {InspectorControls} = wp.blockEditor;
 const {Fragment, RawHTML} = wp.element;
 const {TextControl, SelectControl, PanelBody, PanelRow} = wp.components;
 
+//Import lib
+import {validateSingleField, validteFields} from './lib/validation'
+
 /**
  * Registering rentle shop block
  */
@@ -114,9 +117,11 @@ registerBlockType('embed-rentle/shop-block', {
 				</InspectorControls>
 				<div className={classNames(className, attributes.paddingSize)}>
 					{Logo()}
-					{(!attributes.shopId) &&
+					{(!attributes.shopId && validteFields(attributes.shopId, attributes.locationId, attributes.categoryId, attributes.productId)) &&
 					<p className={'wp-block-embed-rentle-shop-block__warning'}>{__('You need to define shop id.')}</p>}
-					{(attributes.shopId) &&
+					{(attributes.shopId && ! validteFields(attributes.shopId, attributes.locationId, attributes.categoryId, attributes.productId)) &&
+					<p className={'wp-block-embed-rentle-shop-block__warning'}>{__('There is something wrong with the settings. Shop, location, category or product ID should include only letters or numbers.')}</p>}
+					{(attributes.shopId && validteFields(attributes.shopId, attributes.locationId, attributes.categoryId, attributes.productId)) &&
 					<p>{__('Your widget is ready. Just preview the page and see it in action.')}</p>}
 				</div>
 			</Fragment>
