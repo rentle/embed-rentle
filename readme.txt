@@ -2,7 +2,7 @@
 Contributors: rentle
 Tags: rental, calendar, availability, reservation, booking
 Requires at least: 5.0
-Tested up to: 6.0
+Tested up to: 6.1
 Requires PHP: 5.6
 Stable tag: 1.1.1
 License: GPLv2
@@ -11,45 +11,85 @@ Free rental and booking plugin for Wordpress websites by Rentle. Reservations wi
 
 == Description ==
 
-**Rentle** is the easiest way to handle rental and activity bookings in your Wordpress website. We've built software for the largest ski resorts, outdoor resorts and bike rental shops in the world. Now we are bringing the same benefits to a Wordpress plugin that starts your online renting and activity sales in minutes.
+**Rentle** is the easiest way to handle rental and activity bookings on your WordPress website. Our software is used by thousands of merchants, from local mom-and-pop shops to global retail chains. Install the Rentle WordPress plugin and make your products rentable on your website in a few clicks.
 
-With Rentle you optimize your rental management with two plans: [Rentle Lite](https://www.rentle.io/lite) or [Rentle Core](https://www.rentle.io/core). Lite is our free plan to handle online rentals. Core scales to the needs of the largest operators for both walk-in and online rentals.
+Rentle offers a free version. For those who need more features and customization options, Rentle offers three paid plans starting at $19.50/month.
 
-### Features in [Rentle Lite](https://www.rentle.io/lite):
+### Features
 
-* Booking calendar with real-time inventory availability
-* No risk of overbookings
-* Easy payment handling with deposit support
-* Collecting customer details (height, weight etc.) as part of the order confirmation
-* Email notifications
-* Hosted mobile friendly online store (compatible with Facebook "Reserve now"-button)
-* Barcode scanning
-* Chat support
+#### Online Store
+* Product Pages
+* Product Categories and Collections
+* Location Selector
+* Discount Codes
+* Customizable Checkout Form
+* Payment Processing with Multiple Payment Methods
 
-### Additional features in [Rentle Core](https://www.rentle.io/core):
+#### Product Catalog
+* Rent Products
+* Sell Products
+* Sell Services
+* Product Packages
+* Product Variants
+* Recommended Products & Cross-selling
+* Channel-specific Pricing
+* Channel-specific Visibility & Availability
+* Category-specific Terms & Conditions
 
-* Multi-location support
-* Multiple languages
-* Package products
-* More advanced online store settings
+#### Inventory Management
+* Inventory Tracking
+* Real-time Availability
+* Inventories in Multiple Locations
+* Stock Transfers
+* Data Specifications
+* Usage History
+
+#### Order Management
+* Walk-in Rentals
+* Local Pick-up
+* Local Deliveries
+* Order Management
+* Order Editing
+* Order Dashboard
+* Flexible Buffer Time Settings
+* Pre-authorized Security Deposits
+
+#### Admin & Operation
+* User Access Levels
+* Multi-language Support
+* Barcode Scanner Support
+* Tax rates
+* Localization Settings
+* Customer List
+* Sales & Accounting Reports
+* Data Imports & Exports
+* Webhooks
+
+#### Support
+* Chat Support
+* Knowledge Base
 
 ### Customer stories
-Äkäslompolo Sportshop - Bikes, Skis, Snowboards
-[Rentle helped Äkäslompolo Sportshop in doubling their revenue](https://www.rentle.io/customer-stories/sportshop)
+Decathlon UK — Sports Equipment Rentals
+[Read more](https://www.rentle.io/customers/decathlonuk)
 
-Ounasvaara Ski resort - Skis, Snowboards, Sports equipment
-[Digital rental operations key to growth for Ounasvaara Ski Resort](https://www.rentle.io/customer-stories/ounasvaara)
+Motonet — Trailer and Tool Rentals
+[Read more](https://www.rentle.io/customers/motonet)
 
-Laajis Urban Outdoor Resort - Skis, Bikes, Sports equipment, Adventure Park
-[Rentle on its way to becoming a one-stop solution for Laajis, an urban outdoor resort
-](https://www.rentle.io/customer-stories/laajis)
+Bike Garage — Bike Rentals
+[Read more](https://www.rentle.io/customers/bike-garage)
+
+Sisu Outdoor — Sports Equipment Rentals & Tours
+[Read more](https://www.rentle.io/customers/sisu-outdoor)
+
+[See websites built with Rentle](https://www.rentle.io/customer-websites)
 
 
-### How to get in touch?
-We are always open for ideas. Drop us a message at our [website](https://www.rentle.io) or via [email](info@rentle.io).
+### Get in touch
+We are always open to ideas. Drop us a message on our [website](https://www.rentle.io) or via [email](mailto:info@rentle.io).
 
 
-More technical documentation about the plugin can be found from Github: [https://github.com/rentle/embed-rentle](https://github.com/rentle/embed-rentle)
+More technical documentation about the plugin can be found on GitHub: [https://github.com/rentle/embed-rentle](https://github.com/rentle/embed-rentle)
 
 == Installation ==
 Follow the steps below.
@@ -61,28 +101,51 @@ Follow the steps below.
 
 == Frequently Asked Questions ==
 
-= Does it cost something? =
+= Does Rentle cost something? =
 
-We have two plans **Lite** and **Core**. Lite is always free, and you can use the plugin with it to handle your online rentals. With Core we offer additional benefits and you can check its pricing [here](https://www.rentle.io/pricing)
+We have four plans: FREE, BASIC, GROW, and ADVANCED. The FREE plan doesn’t cost anything. The paid plans start at $19.50/month. Learn more about the Plans [here](https://www.rentle.io/pricing).
 
-= Why is Rentle Lite free? =
+= Do I need a credit card to sign up? =
 
-We believe online rentals are a basic right for every business. We wanted to enable every business to get started with online rentals without a hassle.
+Nope, you can start with Rentle Free, our forever-free plan.
 
-= Do you offer support? =
+= What is the right plan for me? =
 
-Yes. You can reach us via in-app chat or via email at [support@rentle.io](support@rentle.io).
+Our general rule is that if you only operate online, you’re good with the FREE or BASIC plan. With BASIC, you get more customization options and lower payment processing fees.
+
+If you also have a brick-and-mortar store, you will need the GROW plan to create orders for walk-in customers. The ADVANCED plan is for high-volume merchants that need many features.
+
+= Can I also sell products and services with Rentle? =
+
+Yes, you can. You can make products available for rent or sale and sell services like courses and tours. You can even cross-sell products and services by bundling them into packages.
+
+= Does Rentle offer support? =
+
+Yes. You can always contact us through chat or via email at [support@rentle.io](mailto:support@rentle.io). We also have an extensive [knowledge base](https://support.rentle.io) where you can find answers to your questions.
+
+= Is Rentle secure? =
+
+Rentle is certified Level 1 PCI DSS compliant and audited as such annually. Your and your customer's data is secured according to the highest standards.
+
+= Are there any discounts for small businesses or non-profits? =
+
+Yes. We apply an automatic 50% discount to your subscription for every month you make less than $1,000 in sales through Rentle.
 
 = Can I use the same system for walk-in rentals? =
 
-Yes, but you will probably need Rentle Core for that. With Core you can handle your whole operation from one system without any hassle like our largest customers. But if you are searching for a solution for online bookings or rentals - check out Lite first. It is fast and easy way to get started.
+Yes. With Rentle, you can seamlessly incorporate online and offline sales without extra operational hassle.
 
 
 == Screenshots ==
 
-1. Everything that we do scales to mobile
-2. Intuitive and easy to understand back-office
-3. Plugin works both for Rentle Lite (always free) and Core
+1. Product Listing
+2. Product Page
+3. Creating walk-in orders
+4. Orders Overview
+5. Single Order View
+6. Customers List
+7. Product Catalog
+8. Inventory
 
 == Changelog ==
 1.1.1 Add validation for shopID, locationID, categoryID and productID
