@@ -127,6 +127,21 @@ class Rentle_Content_Creator {
 			unset( $atts['product'] );
 		}
 
+		if ( isset( $atts['disableautoscroll'] ) ) {
+			$atts['disableAutoScroll'] = $atts['disableautoscroll'];
+			unset( $atts['disableautoscroll'] );
+		}
+
+		if ( isset( $atts['disableheightanimation'] ) ) {
+			$atts['disableHeightAnimation'] = $atts['disableheightanimation'];
+			unset( $atts['disableheightanimation'] );
+		}
+
+		if ( isset( $atts['locationsview'] ) ) {
+			$atts['locationsView'] = $atts['locationsview'];
+			unset( $atts['locationsview'] );
+		}
+
 		if ( isset( $atts['padding'] ) ) {
 			$atts['paddingSize'] = $atts['padding'];
 			unset( $atts['padding'] );
