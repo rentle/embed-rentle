@@ -15,6 +15,7 @@ class Embed_Rentle {
 	 */
 	function __construct() {
 		add_action( 'init', [ $this, 'initialize_hooks' ] );
+		add_action( 'wp_head', [ $this, 'hook_rentle_js' ] );
 	}
 
 	/**
@@ -25,6 +26,12 @@ class Embed_Rentle {
 	public function initialize_hooks() {
 		$this->register_assets();
 		add_shortcode( 'rentle_shop', [ $this, 'rentle_output_render_callback' ] );
+	}
+
+	public function hook_rentle_js() {
+		?>
+		<script type="text/javascript" src="https://cdn.rentle.io/embed/bundle.js" defer></script>
+		<?php
 	}
 
 	public function register_assets() {
@@ -77,11 +84,11 @@ class Embed_Rentle {
 		register_block_type(
 			'embed-rentle/shop-block', array(
 				// Enqueue blocks.style.build.css on both frontend & backend.
-				'style'         => 'embed_rentle-style-css',
+				'style'           => 'embed_rentle-style-css',
 				// Enqueue blocks.build.js in the editor only.
-				'editor_script' => 'embed_rentle-block-js',
+				'editor_script'   => 'embed_rentle-block-js',
 				// Enqueue blocks.editor.build.css in the editor only.
-				'editor_style'  => 'embed_rentle-block-editor-css',
+				'editor_style'    => 'embed_rentle-block-editor-css',
 				// PHP rendering callback
 				'render_callback' => [ $this, 'rentle_output_render_callback' ],
 			)

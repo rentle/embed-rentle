@@ -10,12 +10,48 @@ class Rentle_Content_Creator {
 				self::errorrr();
 			} else {
 				?>
-				<iframe width="100%" height="100%" src="<?php echo self::create_iframe_src( $attributes ); ?>"></iframe>
+				<rentle-store <?php self::set_web_component_attributes( $attributes ); ?> />
 				<?php
 			}
 			?>
 		</div>
 		<?php
+	}
+
+	public static function set_web_component_attributes( $attributes ) {
+		if ( ! empty( $attributes['shopId'] ) ) {
+			echo ' shop="' . esc_attr( $attributes['shopId'] ) . '"';
+		}
+
+		if ( ! empty( $attributes['locationId'] ) ) {
+			echo ' store="' . esc_attr( $attributes['locationId'] ) . '"';
+		}
+
+		if ( ! empty( $attributes['categoryId'] ) ) {
+			echo ' category="' . esc_attr( $attributes['categoryId'] ) . '"';
+		}
+
+		if ( ! empty( $attributes['productId'] ) ) {
+			echo ' product="' . esc_attr( $attributes['productId'] ) . '"';
+		}
+
+		if ( isset( $attributes['disableAutoScroll'] ) && true === $attributes['disableAutoScroll'] ) {
+			echo ' disableautoscroll="true"';
+		}
+
+		if ( isset( $attributes['disableHeightAnimation'] ) && true === $attributes['disableHeightAnimation'] ) {
+			echo ' disableheightanimation="true"';
+		}
+
+		if ( isset( $attributes['locationsView'] ) && true === $attributes['locationsView'] ) {
+			echo ' locationsview="true"';
+		}
+
+		// Add height:100%
+		echo ' height="100%"';
+
+		// Add lang automatically
+		echo ' lang="' . esc_attr( self::get_locale() ) . '"';
 	}
 
 	private static function get_classes( $attributes ) {
@@ -41,67 +77,13 @@ class Rentle_Content_Creator {
 		return implode( ' ', $array );
 	}
 
-	public static function create_iframe_src( $attributes ) {
-		$base_url         = "https://rentle.store/{$attributes['shopId']}";
-		$category_request = false;
-
-		// Show by shop name
-		if ( empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
-			$url = $base_url;
-		}
-
-		// Show by location
-		if ( ! empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
-			$url = "{$base_url}/l/{$attributes['locationId']}/";
-		}
-
-		// Show by product
-		if ( ( empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) || ( empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) ) {
-			$url = "{$base_url}/product/{$attributes['productId']}/";
-		}
-
-		// Show by product and location
-		if ( ! empty( $attributes['locationId'] ) && empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) {
-			$url = "{$base_url}/l/{$attributes['locationId']}/product/{$attributes['productId']}/";
-		}
-
-		// Show by category
-		if ( empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
-			$url              = "{$base_url}/shop?category={$attributes['categoryId']}";
-			$category_request = true;
-		}
-
-		// Show by category and location
-		if ( ! empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && empty( $attributes['productId'] ) ) {
-			$url              = "{$base_url}/l/{$attributes['locationId']}/shop?category={$attributes['categoryId']}";
-			$category_request = true;
-		}
-
-		// all filled, show by product and location
-		if ( ! empty( $attributes['locationId'] ) && ! empty( $attributes['categoryId'] ) && ! empty( $attributes['productId'] ) ) {
-			$url = "{$base_url}/l/{$attributes['locationId']}/product/{$attributes['productId']}/";
-		}
-
-
-		// Adding lang code
-		if ( $category_request ) {
-			$url .= self::setting_iframe_locale( '&' );
-		} else {
-			$url .= self::setting_iframe_locale();
-		}
-
-		return $url;
-	}
-
-	private static function setting_iframe_locale( $start_with = '?' ) {
-		$string = $start_with . 'lang=' . substr( get_locale(), 0, 2 ); // Need only first two letters of country code
-
+	private static function get_locale() {
 		// Look for polylang installation
 		if ( function_exists( 'pll_current_language' ) ) {
-			$string = '?lang=' . pll_current_language();
+			return pll_current_language();
 		}
 
-		return $string;
+		return substr( get_locale(), 0, 2 );
 	}
 
 	private static function errorrr() {

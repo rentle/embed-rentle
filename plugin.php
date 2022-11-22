@@ -5,7 +5,7 @@
  * Description: Rentle WordPress plugin to insert Rentle booking system on your web site.
  * Author: rentle
  * Author URI: https://www.rentle.io/
- * Version: 1.1.1
+ * Version: 1.2
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *

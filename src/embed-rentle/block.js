@@ -14,7 +14,7 @@ const {__} = wp.i18n; // Import __() from wp.i18n
 const {registerBlockType} = wp.blocks; // Import registerBlockType() from wp.blocks
 const {InspectorControls} = wp.blockEditor;
 const {Fragment, RawHTML} = wp.element;
-const {TextControl, SelectControl, PanelBody, PanelRow} = wp.components;
+const {TextControl, ToggleControl, SelectControl, PanelBody, PanelRow} = wp.components;
 
 //Import lib
 import {validateSingleField, validteFields} from './lib/validation'
@@ -53,6 +53,18 @@ registerBlockType('embed-rentle/shop-block', {
 		},
 		paddingSize: {
 			type: 'string'
+		},
+		disableAutoScroll: {
+			type: 'boolean',
+			default: false
+		},
+		disableHeightAnimation: {
+			type: 'boolean',
+			default: false
+		},
+		locationsView: {
+			type: 'boolean',
+			default: false
 		}
 	},
 
@@ -98,6 +110,30 @@ registerBlockType('embed-rentle/shop-block', {
 								onChange={value => setAttributes({productId: value})}
 								placeholder="Product ID"
 								label="Product ID"
+							/>
+						</PanelRow>
+						<PanelRow>
+							<ToggleControl
+								label={__('Disable auto scroll')}
+								checked={ attributes.disableAutoScroll }
+								help={`By default, your website user is automatically scrolled to the top of the embedded store when the page changes or a dialog is shown inside the embed. This improves user experience in most cases, but you can disable this by enabling this setting.`}
+								onChange={ () => setAttributes( { disableAutoScroll: ! attributes.disableAutoScroll } ) }
+							/>
+						</PanelRow>
+						<PanelRow>
+							<ToggleControl
+								label={__('Disable height animation')}
+								checked={ attributes.disableHeightAnimation }
+								help={`By default, when the height of the embedded store changes, the height is animated to its new value to prevent stutter. You can disable by enabling this setting.`}
+								onChange={ () => setAttributes( { disableHeightAnimation: ! attributes.disableHeightAnimation } ) }
+							/>
+						</PanelRow>
+						<PanelRow>
+							<ToggleControl
+								label={__('Locations view')}
+								checked={ attributes.locationsView }
+								help={`If you have multiple stores and want to display all the store options for the customer, enable this setting.`}
+								onChange={ () => setAttributes( { locationsView: ! attributes.locationsView } ) }
 							/>
 						</PanelRow>
 						<PanelRow>
