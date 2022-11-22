@@ -29,6 +29,10 @@ class Embed_Rentle {
 	}
 
 	public function hook_rentle_js() {
+		global $post;
+		if ( ! has_block( 'embed-rentle/shop-block', $post->ID ) && ! has_shortcode( $post->post_content, 'rentle_shop' ) ) {
+			return;
+		}
 		?>
 		<script type="text/javascript" src="https://cdn.rentle.io/embed/bundle.js" defer></script>
 		<?php
