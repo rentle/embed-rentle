@@ -26,6 +26,9 @@ Shortcode can take different attributes:
 - `category` ==> category id you want to show
 - `product` ==> specific product you want to show
 - `padding` ==> vertical padding of the shop block. Can be one of the following: `no-padding`, `small-padding`, `medium-padding`, `large-padding`
+- `disableautoscroll` ==> set to true, if you want to disable auto scroll
+- `disableheightanimation` ==> set to true, if you want to disable height animation
+- `locationsview` => set to true, if you want to list all store options
 - `class` ==> if you want to wrap the element to custom class
 
 Example: `[rentle_shop shop="myshop" location="mylocation"]` ==> would show rentle iframe from the selected location.
