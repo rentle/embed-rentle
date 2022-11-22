@@ -148,6 +148,7 @@ Yes. With Rentle, you can seamlessly incorporate online and offline sales withou
 8. Inventory
 
 == Changelog ==
+1.2 Change to rentle web component
 1.1.1 Add validation for shopID, locationID, categoryID and productID
 1.1 Change iframe shop urls
 1.0 First version
