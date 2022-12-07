@@ -11,6 +11,10 @@ Block has few settings when it's selected:
 - location
 - category
 - product
+- height
+- disable auto scroll
+- disable height animation
+- locations view
 - padding options
 - custom class can be added to Gutenberg editor
 
@@ -26,6 +30,7 @@ Shortcode can take different attributes:
 - `category` ==> category id you want to show
 - `product` ==> specific product you want to show
 - `padding` ==> vertical padding of the shop block. Can be one of the following: `no-padding`, `small-padding`, `medium-padding`, `large-padding`
+- `height` ==> height of the shop, example `100%` or `700px` or `100vh`
 - `disableautoscroll` ==> set to true, if you want to disable auto scroll
 - `disableheightanimation` ==> set to true, if you want to disable height animation
 - `locationsview` => set to true, if you want to list all store options

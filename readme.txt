@@ -4,7 +4,7 @@ Tags: rental, calendar, availability, reservation, booking
 Requires at least: 5.0
 Tested up to: 6.1
 Requires PHP: 5.6
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2
 
 Free rental and booking plugin for Wordpress websites by Rentle. Reservations with real-time inventory availability for rentals and activity sales.
@@ -148,6 +148,7 @@ Yes. With Rentle, you can seamlessly incorporate online and offline sales withou
 8. Inventory
 
 == Changelog ==
+1.2.1 Change how height is defined for shop block. Remove predefined 100vh height property.
 1.2 Change to rentle web component
 1.1.1 Add validation for shopID, locationID, categoryID and productID
 1.1 Change iframe shop urls

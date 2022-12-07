@@ -51,6 +51,9 @@ registerBlockType('embed-rentle/shop-block', {
 		productId: {
 			type: 'string'
 		},
+		height: {
+			type: 'string'
+		},
 		paddingSize: {
 			type: 'string'
 		},
@@ -110,6 +113,16 @@ registerBlockType('embed-rentle/shop-block', {
 								onChange={value => setAttributes({productId: value})}
 								placeholder="Product ID"
 								label="Product ID"
+							/>
+						</PanelRow>
+						<PanelRow>
+							<TextControl
+								value={attributes.height}
+								type="string"
+								onChange={value => setAttributes({height: value})}
+								placeholder="Height"
+								label="Height"
+								help={`If you want to define custom height for the block, define it here. Example 100% or 800px.`}
 							/>
 						</PanelRow>
 						<PanelRow>

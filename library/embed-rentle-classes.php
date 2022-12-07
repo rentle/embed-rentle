@@ -35,6 +35,10 @@ class Rentle_Content_Creator {
 			echo ' product="' . esc_attr( $attributes['productId'] ) . '"';
 		}
 
+		if ( ! empty( $attributes['height'] ) ) {
+			echo ' height="' . esc_attr( $attributes['height'] ) . '"';
+		}
+
 		if ( isset( $attributes['disableAutoScroll'] ) && true === $attributes['disableAutoScroll'] ) {
 			echo ' disableautoscroll="true"';
 		}
@@ -46,9 +50,6 @@ class Rentle_Content_Creator {
 		if ( isset( $attributes['locationsView'] ) && true === $attributes['locationsView'] ) {
 			echo ' locationsview="true"';
 		}
-
-		// Add height:100%
-		echo ' height="100%"';
 
 		// Add lang automatically
 		echo ' lang="' . esc_attr( self::get_locale() ) . '"';
