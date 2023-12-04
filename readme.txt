@@ -71,22 +71,22 @@ Rentle offers a free version. For those who need more features and customization
 
 ### Customer stories
 Decathlon UK — Sports Equipment Rentals
-[Read more](https://www.rentle.io/customers/decathlonuk)
+[Read more](https://www.twicecommerce.com/customers/decathlonuk)
 
 Motonet — Trailer and Tool Rentals
-[Read more](https://www.rentle.io/customers/motonet)
+[Read more](https://www.twicecommerce.com/customers/motonet)
 
 Bike Garage — Bike Rentals
-[Read more](https://www.rentle.io/customers/bike-garage)
+[Read more](https://www.twicecommerce.com/customers/bike-garage)
 
 Sisu Outdoor — Sports Equipment Rentals & Tours
-[Read more](https://www.rentle.io/customers/sisu-outdoor)
+[Read more](https://www.twicecommerce.com/customers/sisu-outdoor)
 
-[See websites built with Rentle](https://www.rentle.io/customer-websites)
+[See websites built with Rentle](https://www.twicecommerce.com/customer-websites)
 
 
 ### Get in touch
-We are always open to ideas. Drop us a message on our [website](https://www.rentle.io) or via [email](mailto:info@rentle.io).
+We are always open to ideas. Drop us a message on our [website](https://www.twicecommerce.com) or via [email](mailto:info@twicecommerce.com).
 
 
 More technical documentation about the plugin can be found on GitHub: [https://github.com/rentle/embed-rentle](https://github.com/rentle/embed-rentle)
@@ -95,15 +95,15 @@ More technical documentation about the plugin can be found on GitHub: [https://g
 Follow the steps below.
 
 1. Activate the plugin in Wordpress
-2. Add Rentle shop block via Gutenberg blocks or use the shortocode "in the old way".
-3. Create your **Free Rentle Lite Account** [here](https://www.rentle.shop/register)
+2. Add your store with Gutenberg blocks, or with the shortcode [rentle_shop shop = Store ID].
+3. Create your **Free Account** [here](https://admin.twicecommerce.com/register)
 4. From **Settings** -> **Channels** you will find the needed information for the plugin
 
 == Frequently Asked Questions ==
 
 = Does Rentle cost something? =
 
-We have four plans: FREE, BASIC, GROW, and ADVANCED. The FREE plan doesn’t cost anything. The paid plans start at $19.50/month. Learn more about the Plans [here](https://www.rentle.io/pricing).
+We have four plans: FREE, DISCOVER, BUILD, and ADVANCE. The FREE plan doesn’t cost anything. The paid plans start at $19.50/month. Learn more about the Plans [here](https://www.twicecommerce.com/pricing).
 
 = Do I need a credit card to sign up? =
 
@@ -111,9 +111,9 @@ Nope, you can start with Rentle Free, our forever-free plan.
 
 = What is the right plan for me? =
 
-Our general rule is that if you only operate online, you’re good with the FREE or BASIC plan. With BASIC, you get more customization options and lower payment processing fees.
+Our general rule is that if you only operate online, you’re good with the FREE or DISCOVER plan. With DISCOVER, you get more customization options and lower payment processing fees.
 
-If you also have a brick-and-mortar store, you will need the GROW plan to create orders for walk-in customers. The ADVANCED plan is for high-volume merchants that need many features.
+If you also have a brick-and-mortar store, you will need the BUILD plan to create orders for walk-in customers. The ADVANCE plan is for high-volume merchants that need many features.
 
 = Can I also sell products and services with Rentle? =
 
@@ -121,15 +121,11 @@ Yes, you can. You can make products available for rent or sale and sell services
 
 = Does Rentle offer support? =
 
-Yes. You can always contact us through chat or via email at [support@rentle.io](mailto:support@rentle.io). We also have an extensive [knowledge base](https://support.rentle.io) where you can find answers to your questions.
+Yes. You can always contact us through chat or via [email](mailto:support@twicecommerce.com). We also have an extensive [knowledge base](https://support.twicecommerce.com) where you can find answers to your questions.
 
 = Is Rentle secure? =
 
 Rentle is certified Level 1 PCI DSS compliant and audited as such annually. Your and your customer's data is secured according to the highest standards.
-
-= Are there any discounts for small businesses or non-profits? =
-
-Yes. We apply an automatic 50% discount to your subscription for every month you make less than $1,000 in sales through Rentle.
 
 = Can I use the same system for walk-in rentals? =
 
