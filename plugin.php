@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Rentle - Easy Rental Booking System
+ * Plugin Name: Twice Commerce - Easy Rental Booking System
  * Plugin URI: https://wordpress.org/plugins/embed-rentle/
- * Description: Rentle WordPress plugin to insert Rentle booking system on your web site.
+ * Description: Twice Commerce WordPress plugin to insert Twice Commerce booking system on your web site.
  * Author: rentle
- * Author URI: https://www.rentle.io/
+ * Author URI: https://www.twicecommerce.com/
  * Version: 1.2.1
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
