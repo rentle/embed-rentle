@@ -22,7 +22,7 @@ As said, only shop id/name is mandatory. You can customise the output by definin
 
 ### Using shortcode
 
-Following shortcode can be used: `[rentle_shop]`
+Following shortcode can be used: `[twice_commerce_shop]`
 
 Shortcode can take different attributes:
 - `shop` ==> Your Twice Commerce shop id/name
@@ -36,7 +36,7 @@ Shortcode can take different attributes:
 - `locationsview` => set to true, if you want to list all store options
 - `class` ==> if you want to wrap the element to custom class
 
-Example: `[rentle_shop shop="myshop" location="mylocation"]` ==> would show Twice Commerce iframe from the selected location.
+Example: `[twice_commerce_shop shop="myshop" location="mylocation"]` ==> would show Twice Commerce iframe from the selected location.
 
 This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
 

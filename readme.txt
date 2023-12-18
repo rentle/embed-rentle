@@ -95,7 +95,7 @@ More technical documentation about the plugin can be found on GitHub: [https://g
 Follow the steps below.
 
 1. Activate the plugin in Wordpress
-2. Add your store with Gutenberg blocks, or with the shortcode [rentle_shop shop = Store ID].
+2. Add your store with Gutenberg blocks, or with the shortcode [twice_commerce_shop shop = Store ID].
 3. Create your **Free Account** [here](https://admin.twicecommerce.com/register)
 4. From **Settings** -> **Channels** you will find the needed information for the plugin
 

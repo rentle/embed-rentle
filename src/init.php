@@ -26,11 +26,12 @@ class Embed_Rentle {
 	public function initialize_hooks() {
 		$this->register_assets();
 		add_shortcode( 'rentle_shop', [ $this, 'rentle_output_render_callback' ] );
+		add_shortcode( 'twice_commerce_shop', [ $this, 'rentle_output_render_callback' ] );
 	}
 
 	public function hook_rentle_js() {
 		global $post;
-		if ( ! has_block( 'embed-rentle/shop-block', $post->ID ) && ! has_shortcode( $post->post_content, 'rentle_shop' ) ) {
+		if ( ! has_block( 'embed-rentle/shop-block', $post->ID ) && ! has_shortcode( $post->post_content, 'rentle_shop' ) && ! has_shortcode( $post->post_content, 'twice_commerce_shop' ) ) {
 			return;
 		}
 		?>

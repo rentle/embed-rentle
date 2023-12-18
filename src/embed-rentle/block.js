@@ -7,6 +7,7 @@ import './style.scss';
 
 // Import Icon
 import Logo from '../rentle-logo';
+import TwiceCommerceLogo from '../twice-commerce-logo';
 import BlockLogo from "../block-logo";
 
 //Import WP stuff
@@ -23,7 +24,7 @@ import {validateSingleField, validteFields} from './lib/validation'
  * Registering rentle shop block
  */
 registerBlockType('embed-rentle/shop-block', {
-	title: __('Rentle shop block'), // Block title.
+	title: __('Twice Commerce shop block'), // Block title.
 	icon: BlockLogo(),
 	category: 'widgets',
 	keywords: [
@@ -165,7 +166,7 @@ registerBlockType('embed-rentle/shop-block', {
 					</PanelBody>
 				</InspectorControls>
 				<div className={classNames(className, attributes.paddingSize)}>
-					{Logo()}
+					{TwiceCommerceLogo()}
 					{(!attributes.shopId && validteFields(attributes.shopId, attributes.locationId, attributes.categoryId, attributes.productId)) &&
 					<p className={'wp-block-embed-rentle-shop-block__warning'}>{__('You need to define shop id.')}</p>}
 					{(attributes.shopId && ! validteFields(attributes.shopId, attributes.locationId, attributes.categoryId, attributes.productId)) &&
