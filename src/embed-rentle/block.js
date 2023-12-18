@@ -28,7 +28,7 @@ registerBlockType('embed-rentle/shop-block', {
 	icon: BlockLogo(),
 	category: 'widgets',
 	keywords: [
-		__('rentle'),
+		__('rentle', 'twice'),
 	],
 
 	// Enable or disable support for low-level features
