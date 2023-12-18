@@ -4,7 +4,7 @@ Tags: rental, calendar, availability, reservation, booking
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 5.6
-Stable tag: 1.2.1
+Stable tag: 1.3
 License: GPLv2
 
 Free rental and booking plugin for Wordpress websites by Twice Commerce. Reservations with real-time inventory availability for rentals and activity sales.
@@ -144,6 +144,7 @@ Yes. With Twice Commerce, you can seamlessly incorporate online and offline sale
 8. Inventory
 
 == Changelog ==
+1.3 Rentle ==> Twice Commerce brand changes
 1.2.1 Change how height is defined for shop block. Remove predefined 100vh height property.
 1.2 Change to rentle web component
 1.1.1 Add validation for shopID, locationID, categoryID and productID
