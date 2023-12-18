@@ -1,15 +1,18 @@
 {
-  "name": "embed-rentle-cgb-guten-block",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "cgb-scripts start",
-    "build": "cgb-scripts build",
-    "eject": "cgb-scripts eject"
-  },
-  "dependencies": {
-    "bootstrap": "^4.5.0",
-    "cgb-scripts": "1.23.0",
-    "classnames": "^2.2.6"
-  }
+	"name": "embed-rentle-cgb-guten-block",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "cgb-scripts start",
+		"build": "cgb-scripts build",
+		"eject": "cgb-scripts eject"
+	},
+	"dependencies": {
+		"bootstrap": "^4.5.0",
+		"cgb-scripts": "1.23.0",
+		"classnames": "^2.2.6"
+	},
+	"volta": {
+		"node": "12.18.0"
+	}
 }
