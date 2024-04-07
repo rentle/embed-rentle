@@ -2,7 +2,7 @@
 Contributors: rentle
 Tags: rental, calendar, availability, reservation, booking
 Requires at least: 5.0
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 5.6
 Stable tag: 1.3
 License: GPLv2
