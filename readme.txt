@@ -13,7 +13,7 @@ Free rental and booking plugin for Wordpress websites by Twice Commerce. Reserva
 
 **Twice Commerce** is the easiest way to handle rental and activity bookings on your WordPress website. Our software is used by thousands of merchants, from local mom-and-pop shops to global retail chains. Install the Twice Commerce WordPress plugin and make your products rentable on your website in a few clicks.
 
-Twice Commerce offers a free version. For those who need more features and customization options, Twice Commerce offers three paid plans starting at $19.50/month.
+Twice Commerce offers a free 3-day trial. For those continuing their journey, TWICE offers the first subsequent month for 1 USD only. Regular pricing plans start at 29 USD / month.
 
 ### Features
 
@@ -103,17 +103,17 @@ Follow the steps below.
 
 = Does Twice Commerce cost something? =
 
-We have four plans: FREE, DISCOVER, BUILD, and ADVANCE. The FREE plan doesn’t cost anything. The paid plans start at $19.50/month. Learn more about the Plans [here](https://www.twicecommerce.com/pricing).
+We have three plans: Discover, Build, and Advance. You’ll start with a 3-day free trial, the first month costs only 1 USD. The regular monthly fees start at 29 USD / month. Learn more about the plans [here](https://www.twicecommerce.com/pricing).
 
 = Do I need a credit card to sign up? =
 
-Nope, you can start with Twice Commerce Free, our forever-free plan.
+Nope, you can try out TWICE with a 3-day free trail and then only for $1 for the first month.
 
 = What is the right plan for me? =
 
-Our general rule is that if you only operate online, you’re good with the FREE or DISCOVER plan. With DISCOVER, you get more customization options and lower payment processing fees.
+Our general rule is that if you are exploring a completely new business opportunity, Discover will help you validate your business idea. With Discover, you get more customization options, features to sell in person, and lower payment processing fees.
 
-If you also have a brick-and-mortar store, you will need the BUILD plan to create orders for walk-in customers. The ADVANCE plan is for high-volume merchants that need many features.
+If you are a more established business looking to grow an existing revenue stream, we recommend Build or Advance.
 
 = Can I also sell products and services with Twice Commerce? =
 
