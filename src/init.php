@@ -31,6 +31,13 @@ class Embed_Rentle {
 
 	public function hook_rentle_js() {
 		global $post;
+
+		// Ensure $post is available and is an instance of WP_Post
+		if ( ! isset( $post ) || ! $post instanceof WP_Post ) {
+			return;
+		}
+
+		// Check if the post has the specific block or shortcode
 		if ( ! has_block( 'embed-rentle/shop-block', $post->ID ) && ! has_shortcode( $post->post_content, 'rentle_shop' ) && ! has_shortcode( $post->post_content, 'twice_commerce_shop' ) ) {
 			return;
 		}
