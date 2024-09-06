@@ -2,9 +2,9 @@
 Contributors: rentle
 Tags: rental, calendar, availability, reservation, booking
 Requires at least: 5.0
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2
 
 Free rental and booking plugin for Wordpress websites by Twice Commerce. Reservations with real-time inventory availability for rentals and activity sales.
