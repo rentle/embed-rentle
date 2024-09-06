@@ -1,13 +1,13 @@
 function TwiceCommerceLogo() {
 	return (
 		<svg
-			width="600"
-			height="200"
-			viewBox="0 0 600 200"
+			width="162"
+			height="37"
+			viewBox="0 0 162 37"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<g clipPath="url(#clip0_108_85)">
+			<g clipPath="url(#clip0_1_17)">
 				<path
 					d="M115.764 0C104.965 0 97.7105 7.31202 97.7105 18.1946C97.7105 29.0773 105.023 36.3893 115.905 36.3893C125.156 36.3893 131.39 31.78 133.497 23.3994H123.233C122.077 27.0069 119.483 28.9896 115.905 28.9896C110.929 28.9896 107.836 24.8535 107.836 18.1946C107.836 11.5358 110.874 7.39973 115.764 7.39973C119.377 7.39973 121.759 9.19773 123.039 12.8976H133.317C131.455 4.81236 124.923 0 115.764 0Z"
 					fill="black"
@@ -21,7 +21,7 @@ function TwiceCommerceLogo() {
 					fill="black"
 				/>
 				<path
-					d="M89.4614 0.657806L76.6746 35.81H86.6756L99.4624 0.657806H89.4614Z"
+					d="M89.4615 0.657806L76.6747 35.81H86.6756L99.4624 0.657806H89.4615Z"
 					fill="black"
 				/>
 				<path
@@ -30,8 +30,8 @@ function TwiceCommerceLogo() {
 				/>
 			</g>
 			<defs>
-				<clipPath id="clip0_108_85">
-					<rect width="600" height="200" fill="black" />
+				<clipPath id="clip0_1_17">
+					<rect width="162" height="36.3893" fill="white" />
 				</clipPath>
 			</defs>
 		</svg>

@@ -1,8 +1,24 @@
 function BlockLogo() {
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24">
-			<path fill="#fff" d="M0 0h24v24H0z" />
-			<path stroke="#000" fill="none" strokeWidth="1.406" d="M8.203 5.672h4.149a3.164 3.164 0 0 1 0 6.328H12L8.203 5.672ZM15.797 18.328h-4.149a3.164 3.164 0 0 1 0-6.328H12l3.797 6.328Z" />
+		<svg
+			width="48"
+			height="46"
+			viewBox="0 0 48 46"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<rect
+				width="46.6892"
+				height="45.6"
+				transform="translate(0.689209)"
+				fill="white"
+			/>
+			<path
+				fillFule="evenodd"
+				clipRule="evenodd"
+				d="M21.376 33.6L29.2331 12H35.3784L27.5213 33.6H21.376ZM12.6892 33.6L20.5463 12H26.6916L18.8345 33.6H12.6892Z"
+				fill="black"
+			/>
 		</svg>
 	);
 }
