@@ -2,7 +2,7 @@
 Contributors: rentle
 Tags: rental, calendar, availability, reservation, booking
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
 Stable tag: 1.3.1
 License: GPLv2
@@ -144,6 +144,7 @@ Yes. With Twice Commerce, you can seamlessly incorporate online and offline sale
 8. Inventory
 
 == Changelog ==
+1.3.1 Logo changes, small php notice fix
 1.3 Rentle ==> Twice Commerce brand changes
 1.2.1 Change how height is defined for shop block. Remove predefined 100vh height property.
 1.2 Change to rentle web component
