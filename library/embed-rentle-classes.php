@@ -109,47 +109,47 @@ class Rentle_Content_Creator {
 	 */
 	private static function change_keys( $atts ) {
 		if ( isset( $atts['shop'] ) ) {
-			$atts['shopId'] = $atts['shop'];
+			$atts['shopId'] = sanitize_text_field( $atts['shop'] );
 			unset( $atts['shop'] );
 		}
 
 		if ( isset( $atts['location'] ) ) {
-			$atts['locationId'] = $atts['location'];
+			$atts['locationId'] = sanitize_text_field( $atts['location'] );
 			unset( $atts['location'] );
 		}
 
 		if ( isset( $atts['category'] ) ) {
-			$atts['categoryId'] = $atts['category'];
+			$atts['categoryId'] = sanitize_text_field( $atts['category'] );
 			unset( $atts['category'] );
 		}
 
 		if ( isset( $atts['product'] ) ) {
-			$atts['productId'] = $atts['product'];
+			$atts['productId'] = sanitize_text_field( $atts['product'] );
 			unset( $atts['product'] );
 		}
 
 		if ( isset( $atts['disableautoscroll'] ) ) {
-			$atts['disableAutoScroll'] = $atts['disableautoscroll'];
+			$atts['disableAutoScroll'] = sanitize_text_field( $atts['disableautoscroll'] );
 			unset( $atts['disableautoscroll'] );
 		}
 
 		if ( isset( $atts['disableheightanimation'] ) ) {
-			$atts['disableHeightAnimation'] = $atts['disableheightanimation'];
+			$atts['disableHeightAnimation'] = sanitize_text_field( $atts['disableheightanimation'] );
 			unset( $atts['disableheightanimation'] );
 		}
 
 		if ( isset( $atts['locationsview'] ) ) {
-			$atts['locationsView'] = $atts['locationsview'];
+			$atts['locationsView'] = sanitize_text_field( $atts['locationsview'] );
 			unset( $atts['locationsview'] );
 		}
 
 		if ( isset( $atts['padding'] ) ) {
-			$atts['paddingSize'] = $atts['padding'];
+			$atts['paddingSize'] = sanitize_text_field( $atts['padding'] );
 			unset( $atts['padding'] );
 		}
 
 		if ( isset( $atts['class'] ) ) {
-			$atts['className'] = $atts['class'];
+			$atts['className'] = sanitize_text_field( $atts['class'] );
 			unset( $atts['class'] );
 		}
 
