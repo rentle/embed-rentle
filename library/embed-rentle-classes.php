@@ -60,19 +60,19 @@ class Rentle_Content_Creator {
 
 		// Look for align property
 		if ( ! empty( $attributes['align'] ) ) {
-			$array[] = 'align' . $attributes['align'];
+			$array[] = 'align' . sanitize_html_class( $attributes['align'] );
 		}
 
 		// Look for padding size
 		if ( ! empty( $attributes['paddingSize'] ) ) {
-			$array[] = $attributes['paddingSize'];
+			$array[] = sanitize_html_class( $attributes['paddingSize'] );
 		} else {
 			$array[] = 'medium-padding';
 		}
 
 		// Look for custom block classnames inserted to block
 		if ( ! empty( $attributes['className'] ) ) {
-			$array[] = $attributes['className'];
+			$array[] = sanitize_html_class( $attributes['className'] );
 		}
 
 		return implode( ' ', $array );
