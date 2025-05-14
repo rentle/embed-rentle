@@ -5,7 +5,7 @@
  * Description: Twice Commerce WordPress plugin to insert Twice Commerce booking system on your web site.
  * Author: rentle
  * Author URI: https://www.twicecommerce.com/
- * Version: 1.3.1
+ * Version: 1.3.2
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
