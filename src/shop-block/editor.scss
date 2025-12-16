@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+// Rentle brand colors to be used with plugin
+$rentle-dark: #0E002C !default;
+$rentle-light: #F2F2F2 !default;
+$rentle-green: #3BD691 !default;
+$rentle-red: #D00051 !default;
+$rentle-orange: #FFC6A9 !default;
+
+.wp-block-embed-rentle-shop-block  {
+	background-color: $rentle-light;
+	border: 2px solid $rentle-dark;
+	color: $rentle-dark;
+	text-align: center;
+	height: auto;
+}
+
+.wp-block-embed-rentle-shop-block__warning {
+	padding: 1rem;
+	background-color: red;
+}

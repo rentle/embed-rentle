@@ -87,7 +87,7 @@ class Rentle_Content_Creator {
 		return substr( get_locale(), 0, 2 );
 	}
 
-	private static function errorrr() {
+	public static function errorrr() {
 		echo '<p>' . __( 'Can\'t create iframe. Shop ID need to be specified.' ) . '</p>';
 	}
 

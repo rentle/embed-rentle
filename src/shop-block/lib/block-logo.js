@@ -14,7 +14,7 @@ function BlockLogo() {
 				fill="white"
 			/>
 			<path
-				fillFule="evenodd"
+				fillfule="evenodd"
 				clipRule="evenodd"
 				d="M21.376 33.6L29.2331 12H35.3784L27.5213 33.6H21.376ZM12.6892 33.6L20.5463 12H26.6916L18.8345 33.6H12.6892Z"
 				fill="black"

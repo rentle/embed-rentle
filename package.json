@@ -1,18 +1,23 @@
 {
-	"name": "embed-rentle-cgb-guten-block",
-	"version": "1.0.0",
-	"private": true,
+	"name": "shop-block",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
 	"scripts": {
-		"start": "cgb-scripts start",
-		"build": "cgb-scripts build",
-		"eject": "cgb-scripts eject"
+		"build": "wp-scripts build --blocks-manifest",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --blocks-manifest"
 	},
-	"dependencies": {
-		"bootstrap": "^4.5.0",
-		"cgb-scripts": "1.23.0",
-		"classnames": "^2.2.6"
+	"devDependencies": {
+		"@wordpress/scripts": "^31.1.0"
 	},
 	"volta": {
-		"node": "12.18.0"
+		"node": "20.14.0"
 	}
 }
