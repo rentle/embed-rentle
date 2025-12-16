@@ -1,6 +1,6 @@
 <?php
 // Look for padding attribute and apply to main class, if found
-$padding = $attributes['paddingSize'];
+$padding = ! empty( $attributes['paddingSize'] ) ? $attributes['paddingSize'] : '';
 ?>
 
 <div <?php echo get_block_wrapper_attributes( [ 'class' => ! empty( $padding ) ? esc_attr( $padding ) : '' ] ); // xss ok ?>>
